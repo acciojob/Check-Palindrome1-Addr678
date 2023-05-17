@@ -1,7 +1,7 @@
 // complete the given function
 
 function palindrome(str){
-	let str=s.LowerCase();
+	//let str=s.LowerCase();
 	let isPalindrome=true;
 	let i=0;j=str.length-1;
 	while(i<=j){
