@@ -1,17 +1,19 @@
 // complete the given function
 
 function palindrome(str){
-	//let str=s.LowerCase();
-	let isPalindrome=true;
-	let i=0;j=str.length-1;
-	while(i<=j){
-		if(str[i]!=str[j]){
-			isPalindrome=false;
-			break;
+	var s=str.toLowerCase()
+	var i=0;
+	var j=s.length-1;
+	while(i<j){
+		if(s.charAt(i)===s.charAt(j)){
+			i++;
+			j--;
 		}
-		i++;
-		j--;
+		else{
+			return false
+		}
 	}
-	console.log(isPalindrome ? "Palindrome":"Not a Palindrome");
+	return true;
 }
+
 module.exports = palindrome
